@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import logoWhite from "../assets/images/sources-homepage/logo/logo-white.png";
+import logoWhite from "../Assets/images/sources-homepage/logo/logo-white.png";
 
 
 

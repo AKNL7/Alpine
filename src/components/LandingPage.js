@@ -1,22 +1,26 @@
 import React from "react";
-import alpinePure from "../assets/images/sources-homepage/versions/ALPINE-PURE-1.png";
-import AlpinePureCompo from "../assets/images/sources-homepage/versions/COMPO-PURE.png";
-import alpineLegend from "../assets/images/sources-homepage/versions/ALPINE-LEGENDE-1.png";
-import AlpineLegendCompo from "../assets/images/sources-homepage/versions/COMPO-LEGENDE.png";
-import aPure1 from "../assets/images/sources-homepage/galerie/A110_PE_1.jpg";
-import aPure2 from "../assets/images/sources-homepage/galerie/A110_PE_7.jpg";
-import aPure3 from "../assets/images/sources-homepage/galerie/A110_PE_9.jpg";
-import aPure4 from "../assets/images/sources-homepage/galerie/A110_PURE_4.jpg";
-import aPure5 from "../assets/images/sources-homepage/galerie/A110_PURE_6.jpg";
-import aLegend1 from "../assets/images/sources-homepage/galerie/A110_LEGENDE_1.jpg";
-import aLegend2 from "../assets/images/sources-homepage/galerie/A110_LEGENDE_5.jpg";
-import aLegend4 from "../assets/images/sources-homepage/galerie/A110_LEGENDE_9.jpg";
-import aLegend5 from "../assets/images/sources-homepage/A110/Alpine-A110-1.jpg";
-import Legend from "../assets/images/configurateur/modele/selection/legende.png";
-import Pure from "../assets/images/configurateur/modele/selection/pure.png";
-import duoRight from "../assets/images/sources-homepage/design/duo-right.jpg";
-import duoLeft from "../assets/images/sources-homepage/design/duo-left.jpg";
-import visuelAlpine from "../assets/images/sources-homepage/caractéristiques/dimensions-tech.png";
+import alpinePure from "../Assets/images/sources-homepage/versions/ALPINE-PURE-1.png";
+import AlpinePureCompo from "../Assets/images/sources-homepage/versions/COMPO-PURE.png";
+import alpineLegend from "../Assets/images/sources-homepage/versions/ALPINE-LEGENDE-1.png";
+import AlpineLegendCompo from "../Assets/images/sources-homepage/versions/COMPO-LEGENDE.png";
+import aPure1 from "../Assets/images/sources-homepage/galerie/A110_PE_1.jpg";
+import aPure2 from "../Assets/images/sources-homepage/galerie/A110_PE_7.jpg";
+import aPure3 from "../Assets/images/sources-homepage/galerie/A110_PE_9.jpg";
+import aPure4 from "../Assets/images/sources-homepage/galerie/A110_PURE_4.jpg";
+import aPure5 from "../Assets/images/sources-homepage/galerie/A110_PURE_6.jpg";
+import aLegend1 from "../Assets/images/sources-homepage/galerie/A110_LEGENDE_1.jpg";
+import aLegend2 from "../Assets/images/sources-homepage/galerie/A110_LEGENDE_5.jpg";
+import aLegend4 from "../Assets/images/sources-homepage/galerie/A110_LEGENDE_9.jpg";
+import aLegend5 from "../Assets/images/sources-homepage/A110/Alpine-A110-1.jpg";
+import Legend from "../Assets/images/configurateur/modele/selection/legende.png";
+import Pure from "../Assets/images/configurateur/modele/selection/pure.png";
+import duoRight from "../Assets/images/sources-homepage/design/duo-right.jpg";
+import duoLeft from "../Assets/images/sources-homepage/design/duo-left.jpg";
+import visuelAlpine from "../Assets/images/sources-homepage/caractéristiques/dimensions-tech.png";
+
+import { Link } from "react-router-dom";
+import Header from "./Header";
+
 
 
 
@@ -24,7 +28,10 @@ import visuelAlpine from "../assets/images/sources-homepage/caractéristiques/di
 
 const LandingPage = () => {
   return (
-    <>
+  <>
+        <Header />
+       
+   
       <section className="alpine_pure">
         <div className="section_title">
           <h1>DECOUVRE NOS DERNIERS MODELES</h1>
@@ -93,7 +100,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
+       
       <section className="configuratorCards">
         <div className="configurator_title">
           <h2>CONFIGURER VOTRE MODELE</h2>
@@ -102,6 +109,7 @@ const LandingPage = () => {
             modéle
           </h3>
         </div>
+        <Link to="/configurator">
         <div className="card_container">
           <div className="card">
             <div className="wrapper">
@@ -109,7 +117,11 @@ const LandingPage = () => {
             </div>
             <h3 className="title">A110 Pure</h3>
             <img src={alpinePure} className="character" alt="alpine" />
-          </div>
+            </div>
+            </div>
+     
+        
+      
 
           <div className="card">
             <div className="wrapper">
@@ -127,8 +139,13 @@ const LandingPage = () => {
               alt="alpine_configurator"
             />
           </div>
-        </div>
-      </section>
+          </Link>
+    
+   
+       
+        
+     </section>
+     
 
       <section className="motor">
 
