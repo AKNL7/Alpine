@@ -747,6 +747,8 @@ h1 {
   font-family: "Open Sans", sans-serif;
 }
 
+
+
 /* Section MOTOR */
 
 .motor {
@@ -793,4 +795,95 @@ h1 {
    color: #1c1c1c;
    font-weight : bold;
    font-size: xx-large;
+}
+
+
+/* CONFIGURATOR PAGE  */
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.ColorChoice {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 40px;
+ flex-direction: row;
+ margin-top: 100px;
+}
+
+.ColorChoice > button {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  border: 1px solid #1c1c1c;
+  background-color: #1c1c1c;
+}
+
+.ValidateChoice {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+.selectionPad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+
+.price > p {
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#1c1c1c;
+  margin-bottom: 20px ;
+}
+
+.color-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10%;
+  
+}
+
+.color-img-container > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  background-color: #1c1c1c;
+}
+
+.ValidateChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+/* JANTES */
+
+.selectionPadJantes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.selectionPadJantes > img {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10%;
+ 
 }

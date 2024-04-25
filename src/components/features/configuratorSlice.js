@@ -5,9 +5,9 @@ import legendeModel from "../../Assets/images/configurateur/modele/selection/leg
 import pureModel from "../../Assets/images/configurateur/modele/selection/pure.png";
 
 // color PURE  images
-import pureBlanc from "../../Assets/images/configurateur/modele/pure/modele_pure-couleur_blanche-jante_standard (1).jpg";
-import pureBleu from "../../Assets/images/configurateur/modele/pure/modele_pure-couleur_bleu-jante_standard (1).jpg";
-import pureNoir from "../../Assets/images/configurateur/modele/pure/modele_pure-couleur_noire-jante_standard (1).jpg";
+import pureBlanc from "../../Assets/images/configurateur/couleurs/selection/blanc.jpg";
+import pureBleu from "../../Assets/images/configurateur/couleurs/selection/bleu.jpg";
+import pureNoir from "../../Assets/images/configurateur/couleurs/selection/noir.jpg";
 // color LEGEND images
 import legendeBlanc from "../../Assets/images/configurateur/modele/legende/modele_legende-couleur_blanc-jante_legende-4.jpg";
 import legendeBleu from "../../Assets/images/configurateur/modele/legende/modele_legende-couleur_bleu-jante_legende-4.jpg";
@@ -473,18 +473,16 @@ const configuratorSlice = createSlice({
   name: "configurator",
   initialState,
   reducers: {
-    increment(state) {
-      state.value++;
+    validItem: (state, action) => {
+      state.items.push(action.payload);
     },
-    decrement(state) {
-      state.value--;
-    },
-    incrementByAmount(state, action) {
-      state.value += action.payload;
+    selectColor: (state, action) => {
+      state.selectedColor = action.payload;
     },
   },
 });
 
-export const { increment, decrement, incrementByAmount } =
+
+export const {  selectColor, validItem  } =
   configuratorSlice.actions;
 export default configuratorSlice.reducer;

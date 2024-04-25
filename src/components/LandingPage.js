@@ -28,10 +28,9 @@ import Header from "./Header";
 
 const LandingPage = () => {
   return (
-  <>
-        <Header />
-       
-   
+    <>
+      <Header />
+
       <section className="alpine_pure">
         <div className="section_title">
           <h1>DECOUVRE NOS DERNIERS MODELES</h1>
@@ -100,7 +99,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-       
+
       <section className="configuratorCards">
         <div className="configurator_title">
           <h2>CONFIGURER VOTRE MODELE</h2>
@@ -109,20 +108,20 @@ const LandingPage = () => {
             modéle
           </h3>
         </div>
-        <Link to="/configurator">
-        <div className="card_container">
-          <div className="card">
-            <div className="wrapper">
-              <img src={Pure} className="cover-image" alt="alpine" />
+        <Link to="/alpine-pure">
+          <div className="card_container">
+            <div className="card">
+              <div className="wrapper">
+                <img src={Pure} className="cover-image" alt="alpine" />
+              </div>
+              <h3 className="title">A110 Pure</h3>
+              <img src={alpinePure} className="character" alt="alpine" />
             </div>
-            <h3 className="title">A110 Pure</h3>
-            <img src={alpinePure} className="character" alt="alpine" />
-            </div>
-            </div>
-     
-        
-      
+      </div>
+        </Link>
 
+        <Link to="/alpine-legend">
+<div className="card_container">
           <div className="card">
             <div className="wrapper">
               <img
@@ -139,16 +138,12 @@ const LandingPage = () => {
               alt="alpine_configurator"
             />
           </div>
-          </Link>
-    
-   
-       
-        
-     </section>
-     
+             </div>
+        </Link>
+  
+      </section>
 
       <section className="motor">
-
         <div className="motor_title">
           Au volant de l’A110, ressentez immédiatement cette sensation de ne
           faire qu’un avec la machine.

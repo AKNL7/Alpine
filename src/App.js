@@ -5,20 +5,19 @@ import NavBar from "./components/NavBar.js";
 import Footer from "./components/Footer.js";
 import LandingPage from "./components/LandingPage.js";
 import Configurator  from "./components/Configurator.js";
+import Jantes from "./components/Jantes.js";
 
 function App() {
   return (
     <div className="App">
-        <NavBar />
-        {/* <Header /> */}
+      <NavBar />
+      {/* <Header /> */}
       <BrowserRouter>
-
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route
-            path="/configurator"
-            element={<Configurator />} />
-          
+          <Route path="/alpine-pure" element={<Configurator />} />
+          <Route path="/alpine-legend" element={<Configurator />} />
+          <Route path="/jantes" element={<Jantes />} />
         </Routes>
         <Outlet />
       </BrowserRouter>

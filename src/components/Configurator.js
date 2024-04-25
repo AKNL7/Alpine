@@ -1,20 +1,22 @@
 import React from 'react';
-import { useSelector } from'react-redux';
+// import { useSelector } from 'react-redux';
+import Color from './Color';
+import Colors from './Colors';
 
 
 
 
 const Configurator = () => {
 
-  const colors = useSelector((state) => state.configurator.color[0].legende);
-  console.log(colors[0].image);
+  // const colors = useSelector((state) => state.configurator.color[0].legende);
+  // console.log(colors[2].image);
 
 
   return (
     <>
-      {/* <section>
-        <img src={[1].image} alt="blanc" />
-      </section> */}
+      <section>
+        <Colors />
+   </section>
     </>
   );
 }
